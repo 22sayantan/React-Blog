@@ -26,12 +26,12 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/register" element={<Register/>}/>
-            <Route path="/register" element={<Login/>}/>
-            <Route path="/register" element={<Setting/>}/>
-            <Route path="/register" element={<Write/>}/>
-            <Route path="/register" element={<Single/>}/>
-            <Route path="/register" element={<Post/>}/>
-            <Route path="/register" element={<SinglePost/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/setting" element={<Setting/>}/>
+            <Route path="/write" element={<Write/>}/>
+            <Route path="/single" element={<Single/>}/>
+            <Route path="/post" element={<Post/>}/>
+            <Route path="/singlepost" element={<SinglePost/>}/>
         </Routes>
       </>
   )
