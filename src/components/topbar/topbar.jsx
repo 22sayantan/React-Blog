@@ -1,5 +1,6 @@
 import './topbar.css';
 import Img from '../../images/Jack.png'
+import {Outlet,Link} from "react-router-dom";
 
 function topbar() {
   return (
@@ -12,8 +13,12 @@ function topbar() {
         </div>
         <div className="topCenter">
             <ul className="topList">
-                <li className="topListItem">HOME</li>
-                <li className="topListItem">ABOUT</li>
+                <li className="topListItem">
+                    <link to="/">HOME</link>
+                </li>
+                <li className="topListItem">
+                    <Link to="/about">ABOUT</Link>
+                </li>
                 <li className="topListItem">CONTACT</li>
                 <li className="topListItem">WRITE</li>
                 <li className="topListItem">LOGOUT</li>                
@@ -22,6 +27,9 @@ function topbar() {
         <div className="topRight">
             <img className='topImg' src={Img} alt="" />
             <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div>
+            <Outlet/>
         </div>
     </div>
   )
