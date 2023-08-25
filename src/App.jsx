@@ -9,6 +9,8 @@ import SinglePost from "./components/singlePost/SinglePost";
 import NavBar from "./components/navBar/NavBar";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/single" element={<Single />} />
           <Route path="/post" element={<Post />} />
           <Route path="/singlepost" element={<SinglePost />} />
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
     </>
