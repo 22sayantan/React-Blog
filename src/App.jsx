@@ -1,6 +1,6 @@
 import Home from "./pages/home/Home"
 import Single from "./pages/single/Single"
-import Topbar from "./components/topbar/topbar"
+import Topbar from "./components/topbar/Topbar"
 import Login from "./pages/login/Login"
 import Register from "./pages/register/Register"
 import Setting from "./pages/settings/Settings"
@@ -9,7 +9,7 @@ import Post from "./components/post/Post"
 import SinglePost from "./components/singlePost/SinglePost"
 
 import {
-  BrowserRouter as Router, Routes,
+  BrowserRouter, Routes,
   Route,
 } from "react-router-dom";
 
@@ -19,8 +19,8 @@ function App() {
   
   return (
       <>
-        <Topbar/>
-        <Router>
+        <BrowserRouter>
+          <Topbar/>
           <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="/register" element={<Register/>}/>
@@ -31,7 +31,7 @@ function App() {
               <Route path="/post" element={<Post/>}/>
               <Route path="/singlepost" element={<SinglePost/>}/>
           </Routes>
-        </Router>
+        </BrowserRouter>
       </>
   )
 }
