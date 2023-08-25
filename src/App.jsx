@@ -1,6 +1,6 @@
 import Home from "./pages/home/Home"
 import Single from "./pages/single/Single"
-import Topbar from "./components/topbar/Topbar"
+// import Topbar from "./components/topbar/Topbar"
 import Login from "./pages/login/Login"
 import Register from "./pages/register/Register"
 import Setting from "./pages/settings/Settings"
@@ -20,7 +20,7 @@ function App() {
   return (
       <>
         <BrowserRouter>
-          <Topbar/>
+          {/* <Topbar/> */}
           <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="/register" element={<Register/>}/>
