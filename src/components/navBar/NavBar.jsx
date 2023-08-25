@@ -1,11 +1,11 @@
-import "./topbar.css";
+import "./navbar.css";
 import Img from "../../images/Jack.png";
 import { Outlet, NavLink, Link } from "react-router-dom";
 
-function Topbar() {
+function NavBar() {
   return (
     <>
-      <section className="top">
+      <section className="navbar">
         <div className="topLeft">
           <Link to="https://www.facebook.com/">
             <i className="topIcon fa-brands fa-square-facebook"></i>
@@ -51,4 +51,4 @@ function Topbar() {
   );
 }
 
-export default Topbar;
+export default NavBar;
